@@ -2,7 +2,6 @@ const { Router } = require("express");
 const router = Router();
 const weatherDAO = require('../daos/weather');
 
-// Read - all weather
 router.get("/location", async (req, res, next) => {
   let {name} = req.query;
   if (name) {
